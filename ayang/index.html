@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kejutan untuk Pacar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hai, Sayang! 💖</h1>
+        <p>Klik tombol di bawah untuk kejutan!</p>
+        <button id="surprise-btn">Klik Aku</button>
+        
+        <!-- Pesan kejutan -->
+        <div id="message" class="hidden">
+            <h2>🌹 Aku Sayang Kamu! 🌹</h2>
+            <p>Cinta itu bukan mencari seseorang yang sempurna, tetapi tentang menerima ketidaksempurnaan dengan hati yang lapang. Dan bersamamu, aku menemukan itu 😘</p>
+        </div>
+        
+        <!-- Slide Foto -->
+        <div id="photo-slide" class="hidden">
+            <h2>Kejutan Spesial! 🎉</h2>
+            <div class="photo-container">
+                <img src="c:\Users\Asus\OneDrive\Pictures\Camera Roll\WhatsApp Image 2024-11-20 at 22.18.09_c326791f.jpg" alt="Foto Pacar" />
+            </div>
+            <p>Kamu selalu menjadi alasanku tersenyum setiap hari. ❤️</p>
+        </div>
+    </div>
+    
+    <!-- Musik romantis -->
+    <audio id="romantic-music" src="c:\\Users\\Asus\\Downloads\\ssstik.io_1731896135810.mp3"></audio>
+    
+    <script>
+        // Menambahkan event listener pada tombol kejutan
+        document.getElementById("surprise-btn").addEventListener("click", function () {
+            // Mengambil elemen yang perlu ditampilkan
+            const message = document.getElementById("message");
+            const photoSlide = document.getElementById("photo-slide");
+            const music = document.getElementById("romantic-music");
+
+            // Menampilkan pesan dan foto
+            message.classList.remove("hidden");
+            photoSlide.classList.remove("hidden");
+
+            // Memutar musik
+            music.play();
+
+            // Menampilkan alert kejutan
+            alert("Kejutan spesial untukmu, sayang! 💕");
+        });
+    </script>
+</body>
+</html>
